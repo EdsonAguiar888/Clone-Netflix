@@ -51,15 +51,22 @@ header nav a:hover{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/dragao.jpg'); 
 
-    height: 566px;
-    width: auto;
+    height: 536px; /* Valor anterior 536px */
+    width: auto; 
+    
     background-size:  cover;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    z-index: 0;
     
+}
+
+.filme-principal .container {
+    width: 70%;
+
 }
 
 .filme-principal .descricao {
@@ -94,5 +101,16 @@ transition: .3s ease all;
     margin-right: 5px;
 }
 
+.container {
+    margin-left: 30px;
+}
 
+.sbox-filme {
+    height:100% ;
+    width: 100%;
+    display: block;
 
+}
+.carrosel-filmes {
+    margin-top: 5px;
+}
